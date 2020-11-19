@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) throws Exception{
         ArmyValues armyValues = new ArmyValues();
-        armyValues.attacker = 10;
+        armyValues.attacker = 16;
         armyValues.defender = 9;
 
         PrintWriter writer = new PrintWriter("attacks.out");
@@ -16,8 +16,10 @@ public class Main {
 	        currentValues = riskAttack.blitz(currentValues);
 
 	        writer.print(ix);
-            writer.print(", ");
-            writer.println(currentValues);
+            writer.print(",");
+            writer.print(currentValues.attacker);
+            writer.print(",");
+            writer.println(currentValues.defender);
         }
 	    writer.close();
     }

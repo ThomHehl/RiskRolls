@@ -9,7 +9,7 @@ public class RiskAttack {
     public ArmyValues blitz(ArmyValues startingValue) {
         ArmyValues result = new ArmyValues(startingValue);
 
-        while (result.attacker > 1 && result.attacker > 0) {
+        while (result.attacker > 1 && result.defender > 0) {
             Die6[] attackDice = getAttackDice(result.attacker);
             Die6[] defenseDice = getDefenseDice(result.defender);
 
