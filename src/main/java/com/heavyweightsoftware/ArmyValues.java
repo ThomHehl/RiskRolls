@@ -1,7 +1,5 @@
 package com.heavyweightsoftware;
 
-import java.util.Arrays;
-
 public class ArmyValues {
     public int attacker;
     public int defender;
@@ -16,7 +14,7 @@ public class ArmyValues {
         defender = other.defender;
     }
 
-    public ArmyValues substract(ArmyValues other) {
+    public ArmyValues subtract(ArmyValues other) {
         ArmyValues result = new ArmyValues();
 
         result.attacker = attacker - other.attacker;

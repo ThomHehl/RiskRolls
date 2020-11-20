@@ -24,7 +24,7 @@ public class RiskAttack {
         int[] defenseValues = rollAll(defenseDice);
 
         ArmyValues rollResult = resolveRoll(attackValues, defenseValues);
-        ArmyValues result = armyValues.substract(rollResult);
+        ArmyValues result = armyValues.subtract(rollResult);
 
         return result;
     }
